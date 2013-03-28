@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+   
+    
+    <HorizontalScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fillViewport="true">
+	<LinearLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content">
+	<Button android:id="@+id/logo"
+	  	    android:background="@drawable/roosevelt2012_unofficial_41x39"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="center"
+		 />
+    </LinearLayout>
+    </HorizontalScrollView>
+   
+    <TextView
+	    android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        />
+    
+    <HorizontalScrollView
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fillViewport="true">
+   	<ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+   	</HorizontalScrollView>
+    
+
+</LinearLayout>

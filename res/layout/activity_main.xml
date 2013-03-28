@@ -1,0 +1,508 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <!-- Barre de menu : -->
+    <HorizontalScrollView
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content">
+	<LinearLayout
+	  android:orientation="horizontal"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content">
+	  	<Button android:id="@+id/logo"
+	  	    android:background="@drawable/roosevelt2012_unofficial_41x39"
+			android:layout_width="50sp"
+			android:layout_height="50sp"
+			android:gravity="center"
+		 />
+	  	<Button android:id="@+id/language_flag"
+	  	    android:background="@drawable/french_flag"
+			android:layout_width="50sp"
+			android:layout_height="50sp"
+			android:gravity="center"
+			android:layout_marginLeft="10sp"
+			android:layout_marginRight="10sp"
+		 />
+	 	<Button android:id="@+id/zoomOut2"
+		    android:background="@drawable/zoom_out"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10sp"
+			android:layout_marginRight="10sp"
+		/>
+		<Button android:id="@+id/zoomIn2"
+		    android:background="@drawable/zoom_in"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10sp"
+			android:layout_marginRight="10sp"
+		/>
+		
+	</LinearLayout>
+	 </HorizontalScrollView>
+	  
+   
+    <!-- Scrollview principale : -->
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+	<TextView
+	    android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="12sp"
+        />
+	
+	<Button android:id="@+id/stephane_hessel_video"
+		    android:text="Stéphane Hessel - Appel à signature"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+	/>
+
+	<LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+	<ImageView
+        android:id="@+id/pen"
+        android:src="@drawable/pen_sign"
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:layout_gravity="center"
+	    />
+	<TextView
+	    android:id="@+id/signatures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        />
+	<Button android:id="@+id/je_signe"	
+		    android:text="Je signe"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10sp"
+			android:layout_marginRight="10sp"
+			android:gravity="center_vertical"
+		 />
+	<Button android:id="@+id/et_apres"
+		    android:text="Et après ?"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10sp"
+			android:layout_marginRight="10sp"
+			android:gravity="center_vertical"
+		 />
+	</LinearLayout>
+
+<!-- 	<Button android:id="@+id/stephane_hessel_video" -->
+<!-- 		    android:text="Stéphane Hessel - Appel à signature" -->
+<!-- 			android:layout_width="fill_parent" -->
+<!-- 			android:layout_height="wrap_content" -->
+<!-- 			android:gravity="center" -->
+<!-- 			android:layout_marginTop="2dp" -->
+<!-- 			android:layout_marginBottom="2dp" -->
+<!-- 	/> -->
+		
+	<!-- Mosaique des visages et "nous avons décidé d'agir" : -->
+<!-- 		<ImageView -->
+<!--         android:id="@+id/mosaique" -->
+<!--         android:src="@drawable/mosaique_black" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="80sp" -->
+<!--         android:layout_gravity="center" -->
+<!-- 	    /> -->
+		<TextView
+	    android:id="@+id/nous_avons_decide_dagir_titre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        />
+		<TextView
+	    android:id="@+id/nous_avons_decide_dagir_corps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        />
+	
+	<LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+		<ImageView
+	        android:id="@+id/nous_souhaitons_contribuer_quotes"
+	        android:src="@drawable/quotes"
+	        android:layout_width="50sp"
+	        android:layout_height="50sp"
+	    />
+		<TextView
+		    android:id="@+id/nous_souhaitons_contribuer"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="false"
+	        android:layout_centerVertical="false"
+	        />
+		</LinearLayout>
+	<TextView
+	    android:id="@+id/dire_l_extreme_gravite_texte"
+		android:onClick="onClick"
+		android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        />
+	<ImageView
+        android:id="@+id/dire_l_extreme_gravite_image"
+        android:src="@drawable/dire_l_extreme_gravite"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0px"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="0px"
+    />
+	
+	<!-- Les chantiers : -->
+	<TextView
+	    android:id="@+id/trois_chantiers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+	<TextView
+	    android:id="@+id/quinze_reformes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+	<TextView
+	    android:id="@+id/introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        />
+	<Button android:id="@+id/eviterLEffondrement"
+	    android:text=">Eviter l'effondrement"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left"
+		android:layout_marginTop="5sp"
+			/>
+		<Button android:id="@+id/reforme01"
+		    android:text="1-Redonner de l'oxygène à nos États"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme02"
+		    android:text="2-Dégager de nouvelles marges de manœuvre financières"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme03"
+		    android:text="3-Mettre fin au sabordage fiscal national"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme04"
+		    android:text="4-Boycotter les paradis fiscaux"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme05"
+		    android:text="5-Limiter au maximum les licenciements"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme06"
+		    android:text="6-Sécuriser les précaires"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme07"
+		    android:text="7-Interdire aux banques de spéculer avec notre argent"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/floating_button"
+		    android:text="Signez dès maintenant l'appel pour une vraie séparation des banques d'affaires et des banques de dépôt ! - Lié à Proposition 7"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+		/>
+		<Button android:id="@+id/reforme08"
+		    android:text="8-Créer une vraie Taxe sur les Transactions Financières"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme09"
+		    android:text="9-Lutter contre les délocalisations"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+
+		<Button android:id="@+id/contreLeChomage"
+		    android:text=">Contre le chômage, construire une nouvelle société"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="left"
+			android:layout_marginTop="5sp"
+			 />
+		<Button android:id="@+id/reforme10"
+		    android:text="10-Investir dans une vraie politique du logement"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme11"
+		    android:text="11-Déclarer la guerre au dérèglement climatique"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme12"
+		    android:text="12-Développer l’économie sociale et solidaire"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme13"
+		    android:text="13-Négocier un autre partage du temps de travailen "
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+
+		<Button android:id="@+id/construireEurope"
+		    android:text=">Construire enfin une Europe démocratique"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="left"
+			android:layout_marginTop="5sp"
+			 />
+		<Button android:id="@+id/reforme14"
+		    android:text="14-Faire éclore la démocratie en Europe"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+		<Button android:id="@+id/reforme15"
+		    android:text="15-Négocier un vrai Traité de l’Europe sociale"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="2dp" />
+
+		<TextView
+		    android:id="@+id/separationSignatures2"
+		    android:text=" "
+	        android:layout_width="wrap_content"
+	        android:layout_height="50sp"
+	        android:layout_gravity="left"
+	        android:textSize="50sp"
+        />
+		<LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+		<ImageView
+	        android:id="@+id/pen2"
+	        android:src="@drawable/pen_sign"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40sp"
+	        android:layout_gravity="center"
+		    />
+		<TextView
+		    android:id="@+id/signatures2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        />
+		<Button android:id="@+id/je_signe2"
+			    android:text="Je signe"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10sp"
+				android:layout_marginRight="10sp"
+				android:gravity="center_vertical"
+			 />
+		<Button android:id="@+id/et_apres2"
+			    android:text="Et après ?"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10sp"
+				android:layout_marginRight="10sp"
+				android:gravity="center_vertical"
+			 />
+		</LinearLayout>
+		
+		<TextView
+		    android:id="@+id/separationRetrouverRoosevelt2012Sur"
+		    android:text=" "
+	        android:layout_width="wrap_content"
+	        android:layout_height="50sp"
+	        android:layout_gravity="left"
+	        android:textSize="50sp"
+        />
+		<TextView
+		    android:id="@+id/retrouver_roosevelt_2012"
+		    android:text="Suivez	 Roosevelt 2012 :"
+		    android:textStyle="bold"
+	        android:textSize="16sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+		<LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+		<ImageView
+	        android:id="@+id/roosevelt2012_propositions"
+	        android:src="@drawable/roosevelt2012_unofficial_41x39"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40sp"
+	        android:layout_gravity="left"
+		    />
+		<ImageView
+	        android:id="@+id/logonouvelledonne"
+	        android:src="@drawable/logonouvelledonnereseau42x29"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40sp"
+	        android:layout_gravity="left"
+		    />
+		<ImageView
+	        android:id="@+id/twitter"
+	        android:src="@drawable/twitter_bird_white_on_blue_45x45"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40sp"
+	        android:layout_gravity="left"
+		    />
+		<ImageView
+	        android:id="@+id/facebook"
+	        android:src="@drawable/facebook_39x37"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40sp"
+	        android:layout_gravity="left"
+		    />
+		<ImageView
+	        android:id="@+id/google_plus"
+	        android:src="@drawable/google_plus_32x32"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40sp"
+	        android:layout_gravity="left"
+		    />
+		</LinearLayout>
+								
+		<!-- Mentions : -->
+		<TextView
+	    android:id="@+id/separationMention"
+	    android:text=" "
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_gravity="left"
+        android:textSize="50sp"
+        />
+		<TextView
+	    android:id="@+id/mes_mentions_text"
+	    android:text="Application non officielle créée le 04/08/2012xxxx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="10sp"
+        />
+		<HorizontalScrollView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content">
+		<LinearLayout
+	  	android:orientation="horizontal"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content">
+		<Button android:id="@+id/mes_mentions_button"
+		android:text="A propos de cette application"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="10sp"
+		 />
+		</LinearLayout>
+		</HorizontalScrollView>
+		
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

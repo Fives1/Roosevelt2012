@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Roosevelt2012</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Roosevelt 2012</string>
+    <string name="reforme">Reforme</string>
+    <string name="image">Les schemas</string>
+   
+</resources>

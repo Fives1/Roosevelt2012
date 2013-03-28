@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+
+	
+    <HorizontalScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/title_layout_of_display_file"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fillViewport="true">
+	<LinearLayout 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content">
+	    <Button android:id="@+id/logo"
+	  	    android:background="@drawable/roosevelt2012_unofficial_41x39"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="center"
+		 />
+	    <Button android:id="@+id/zoomOut"
+	    android:background="@drawable/zoom_out"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:layout_marginLeft="10sp"
+		android:layout_marginRight="10sp"
+		/>
+	    <Button android:id="@+id/zoomIn"
+	    android:background="@drawable/zoom_in"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="right"
+		android:layout_marginLeft="10sp"
+		android:layout_marginRight="10sp"
+		/>
+	    <Button android:id="@+id/original_order"
+	    android:text="Ordre d'origine"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		/>
+	    <Button android:id="@+id/lastname_order"
+	    android:text="Par noms"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		/>
+	    <Button android:id="@+id/firstname_order"
+	    android:text="Par prénoms"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		/>
+	</LinearLayout>
+	</HorizontalScrollView>
+	
+    <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="0pt"
+    />
+    
+
+</LinearLayout>
